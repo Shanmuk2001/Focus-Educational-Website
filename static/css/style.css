@@ -1,0 +1,526 @@
+body{
+  background: black;
+}
+*{
+   margin: 0;
+  padding: 0;
+}
+.navigation{
+
+  overflow: hidden;
+}
+.navbar
+{
+  top:0;
+  left: 0;
+  position:fixed;
+  background:#212121;
+  z-index: 9999;
+  padding-top:26px;
+  width: 100%;
+  height: 60px;
+}
+.navbar .content
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .menu {
+  display: inline-flex;
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.menu li{
+  list-style: none;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.menu li a{
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 30px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.menu li a:hover{
+  background:grey;
+  transition: .5s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background:#2e2e2e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  top: 87px;
+
+}
+
+ .sub1:hover .sub_menu1{
+display: block;
+}
+
+ .sub2:hover .sub_menu2{
+display: block;
+}
+ .sub3:hover .sub_menu3{
+display: block;
+}
+ .sub4:hover .sub_menu4{
+display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.dropdown-content span{
+  color:white;
+  position: absolute;
+  left:70px;
+  top: 90px;
+
+}
+.dropdown-content .other2{
+  color:white;
+  position: absolute;
+  left:30px;
+  top: 90px;
+
+}
+.dropdown-content .other3{
+  color:white;
+  position: absolute;
+  left:20px;
+  top: 90px;
+
+}
+.dropdown-content .other4{
+  color:white;
+  position: absolute;
+  left:35px;
+  top: 90px;
+
+}
+.dropdown-content .sub_menu1 {
+  position: absolute;
+  top:0px;
+  left: 150px;
+  background:#2e2e2e;
+  height: 190px;
+  width: 200px;
+  display:none;
+}
+.dropdown-content .sub_menu2 {
+  position: absolute;
+  top:0px;
+  left: 150px;
+  background: #2e2e2e;
+  height: 190px;
+  width: 200px;
+  display:none;
+}
+.dropdown-content .sub_menu3 {
+  position: absolute;
+  top:0px;
+  left: 150px;
+  background:#2e2e2e;
+  height: 190px;
+  width: 200px;
+  display:none;
+}
+.dropdown-content .sub_menu4 {
+  position: absolute;
+  top:0px;
+  left: 150px;
+  background: #2e2e2e;
+  height: 190px;
+  width: 200px;
+  display:none;
+}
+
+
+
+
+
+/* Slogans Start*/
+#slogans .images{
+
+  width: 102%;
+  height: 500px;
+  background: #FF512F;
+  background-image: url("animation_image.jpg");
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+  left: 0px;
+}
+
+.wrapper{
+    position: absolute;
+    top:40%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}
+.wrapper h2{
+    padding: 0;
+    margin: 0;
+    color:#fff;
+    font-size: 55px;
+}
+.wrapper p{
+    padding-top: 20px;
+    margin: 0;
+    color:#fff;
+    font-size: 20px;
+}
+.wrapper a{
+    background: crimson;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.wrapper span:before{
+    content:'';
+    animation: animate infinite 8s;
+}
+@keyframes animate{
+    0%{
+        content: 'skills';
+    }
+    25%
+    {
+        content:'processes';
+    }
+    50%
+    {
+        content:'teams';
+    }
+    75%
+    {
+        content: 'workflow';
+    }
+    100%
+    {
+        content: 'products';
+    }
+}
+
+
+
+
+
+/* Slogans End*/
+#course{
+  margin-top: 80px;
+}
+#course .box-container{
+
+  position: relative;
+  width: 100%;
+  height: 500px;
+
+  background: #000;
+}
+
+
+
+#course .box-container .box-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins',sans-serif;
+    color: #181F91;
+    margin-left:30px;
+
+}
+#course .box-container .box-course{
+    font-size: 24px;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    margin-left:30px;
+}
+#course .box-container .box-year{
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    margin-left:30px;
+    position: absolute;
+    top: 95px;
+}
+#course .box-container .box-href{
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    margin-left:30px;
+}
+
+#course .box-container #py:hover .Python-box .arrow{
+  left: 140px;
+  transition: 4s ease;
+}
+#course .box-container #ds:hover .DS-box .arrow{
+  left: 140px;
+  transition: 4s ease;
+}
+#course .box-container #ml:hover .ML-box .arrow{
+  left: 140px;
+  transition: 4s ease;
+}
+#course .box-container #dl:hover .DL-box .arrow{
+  left: 140px;
+  transition: 4s ease;
+}
+
+#course .box-container .Python-box
+{
+  position: absolute;
+  height: 180px;
+  width:400px;
+  border-radius: 20px;
+  background:#2e2e2e;
+  left:50px;
+  top: 50px;
+
+}
+#course .box-container .DS-box
+{
+  position: absolute;
+  height: 180px;
+  width:400px;
+  border-radius: 20px;
+  background: #2e2e2e;
+  left: 480px;
+  top: 50px;
+}
+#course .box-container .ML-box
+{
+  position: absolute;
+  height: 180px;
+  width:400px;
+  border-radius: 20px;
+  background: #2e2e2e;
+left: 50px;
+top: 260px;
+
+}
+#course .box-container .DL-box
+{
+  position: absolute;
+ height: 180px;
+  width:400px;
+  border-radius: 20px;
+  background: #2e2e2e;
+left: 480px;
+top: 260px;
+
+}
+#course .box-container .Desc
+{
+  position: absolute;
+  border-radius: 20px;
+  height: 500px;
+  width:500px;
+  background: #000;
+  left: 950px;
+
+}
+#course .box-container .desc_ali{
+ position: relative;
+ text-align: left;
+
+}
+#course .box-container .desc1{
+  position:absolute;
+  left: -20px;
+  top: 80px;
+  color: #ffff1c;
+  font-family: 'Poppins',sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+#course .box-container .desc2{
+  position:absolute;
+  left: -20px;
+  top: 140px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Poppins',sans-serif;
+  color: white;
+  margin-left: 30px;
+}
+#course .box-container .desc3{
+  position:absolute;
+  left: -20px;
+  top: 270px;
+  font-size: 16px;
+  color: white;
+  font-family: 'TT Commons',sans-serif;
+  margin-left: 30px;
+}
+#theory{
+  margin-top: 150px;
+}
+#theory .box-container2{
+   position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 80px;
+
+}
+#theory .box-container2 .t1{
+   position: absolute;
+  height: 400px;
+  width:400px;
+  border-radius: 20px;
+  background:#2e2e2e;
+  left:50px;
+  top: 50px;
+}
+
+#theory .box-container2 .t2{
+   position: absolute;
+  height: 400px;
+  width:400px;
+  border-radius: 20px;
+  background:#2e2e2e;
+  left:550px;
+  top: 50px;
+}
+
+#theory .box-container2 .t3{
+   position: absolute;
+  height: 400px;
+  width:400px;
+  border-radius: 20px;
+  background:#2e2e2e;
+  left:1050px;
+  top: 50px;
+
+}
+
+
+#theory .box-container2 .title{
+  position: absolute;
+  color:white;
+  left: 30px;
+  top: 30px;
+  font-weight: 700;
+   font-family: 'Poppins',sans-serif;
+   padding-right: 30px;
+  font-size: 32px;
+}
+
+#theory .box-container2 .disc{
+  position: absolute;
+  color:white;
+  left: 30px;
+  top: 200px;
+  font-weight:;
+  padding-right: 30px;
+   font-family: 'Poppins',sans-serif;
+  font-size: 20px;
+}
+
+
+
+
+#contact .contact-box{
+  width: 100%;
+  height:500px;
+  color: white;
+  position: relative;
+  background: #2e2e2e;
+}
+
+#contact .contact-box span{
+position: absolute;
+font-size: 40px;
+font-weight: 600;
+top: 45%;
+left: 50px;
+font-family: 'Poppins',sans-serif;
+}
+
+#contact .contact-box p{
+position: absolute;
+font-size: 22px;
+font-weight: 200;
+top: 40%;
+right: 225px;
+font-family: 'Poppins',sans-serif;
+}
+
+#contact .contact-box a{
+position: absolute;
+text-decoration: none;
+color: white;
+font-size: 24px;
+font-weight: 600;
+top: 47%;
+right: 125px;
+font-family: 'Poppins',sans-serif;
+}
+
+
+
+
+
+
+
+#footer{
+  margin-top: 100px;
+}
+
+#footer .container{
+   position: relative;
+  width: 100%;
+  height: 100px;
+  background: #000;
+}
+
+#footer .container .cp{
+  color: white;
+  text-align: center;
+  top: 5px;
+}

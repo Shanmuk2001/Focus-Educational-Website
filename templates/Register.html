@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and registration form</title>
+	<link rel="stylesheet"  href="{{ url_for('static', filename= 'css/login.css') }}">
+</head>
+<body onload="register()">
+
+	<div class="one">
+		<h1 class="logo">Logo here</h1>
+	<div class="form-box">
+		
+		<div class="button-box">
+			<div id="btn"></div>
+			<button type="button" class="toogle-btn" onclick="window.location.href='{{url_for('Login')}}';">Log in</button>
+			<button type="button" class="toogle-btn" onclick="window.location.href='{{url_for('Register')}}';">Register</button>
+		</div>
+		<div class="social-icons">
+			<a href="https://www.facebook.com/" target="_blank"><img src="{{url_for('static', filename= 'images/facebook.png')}}" ></a>
+			<a href="https://twitter.com/?lang=en" target="_blank"><img src="{{url_for('static', filename= 'images/twitter.png')}}"></a>
+			<a href="https://www.google.com/" target="_blank"><img src="{{url_for('static', filename= 'images/google.jfif')}}"></a>
+
+	</div>
+	<form id="login" class="input-group" method="post">
+		<input type="text" class="input-field" placeholder="User id" name="username" required><br>
+		<input type="text" class="input-field" placeholder="Password" name="pass" required><br>
+		<input type="checkbox" class="checkbox"><span>Remember password</span><br>
+		<button type="submit" class="submit-btn">Login</button><br>
+	</form>
+	<form id="register" class="input-group" method="post">
+		<input type="text" class="input-field" placeholder="User id" name="username" value="{{info[0]}}" required><br>
+		<input type="email" class="input-field" placeholder="Email id" name="email" value="{{info[2]}}" required><br>
+		<input type="text" class="input-field" placeholder="Enter password" name="pass" value="{{info[1]}}" required><br>
+		<input type="checkbox" class="checkbox" required><p style="color:white; font-size=13px;">i agree to the terms and conditions</p>
+		<br><p class="msg" style="color:red; font-size=13px;">{{info[3]}}</p>
+		<br><button type="submit"  class="submit-btn">Register</button><br>
+	</form>
+	</div>
+
+</div>
+<script type="text/javascript">
+	var x=document.getElementById("login");
+	var y=document.getElementById("register");
+	var z=document.getElementById("btn");
+	function register() {
+		x.style.left = "-400px";
+		y.style.left = "50px";
+		z.style.left = "110px";
+	}
+	function login() {
+		x.style.left = "50px";
+		y.style.left = "450px";
+		z.style.left = "0px";
+	}
+
+</script>
+</body>
+</html>

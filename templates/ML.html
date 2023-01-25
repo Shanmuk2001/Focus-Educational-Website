@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/Course-style.css') }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<title>Machine Learning</title>
+</head>
+<body>
+	<section id="header">
+	 <header id="header1">
+     	<div class="navigation" >
+      		<nav class="navbar">
+        		<div class="content">
+          			<div class="logo">
+          				<a href=""> <img src="{{ url_for('static',    filename='images/1.jpg') }}" height="32px" width="32px" style="position: absolute; top: 30px;left:10px">Focus </a>
+          			</div>
+          <ul class="menu">
+            <li><a  href="{{ url_for('index')}}">  Home</a></li>
+            <div class="dropdown">
+            	<li><a href="">Explore</a></li>
+            	<div class="dropdown-content">
+            		<a class="sub1" href="{{ url_for('python')}}">First Year
+            		<div class="sub_menu1">
+            			<span>Python</span>
+            		</div>
+            	</a>
+
+            		<a class="sub2" href="{{ url_for('DS')}}">Second year
+            		<div class="sub_menu2">
+            			<span class="other2">Data Structures</span>
+            		</div>
+            	</a>
+
+            		<a class="sub3" href="{{ url_for('ML')}}">Third year
+            		<div class="sub_menu3">
+            			<span class="other3">Machine Learning</span>
+            		</div>
+            	</a>
+
+            		<a class="sub4" href="{{ url_for('DL')}}">Fourth year
+            		<div class="sub_menu4">
+            			<span class="other4">Deep Learning</span>
+            		</div>
+            	</a>
+
+            	</div>
+
+        	</div>
+        	<li><a href="{{ url_for('index')}}" > {{username}}  </a></li>
+            <li><a href="{{ url_for('Login')}}" > Log Out</a></li>
+
+          </ul>
+
+        		</div>
+      		</nav>
+      </div>
+    </header>
+</section>
+
+<section id="bg">
+	<div class="image">
+		<img width="100%" height="400px" src="{{ url_for('static',    filename='images/bg.jpg') }}">
+	</div>
+	<div class="text">
+		<img src="{{ url_for('static',    filename='images/ML.png') }}" style="position: absolute; height: 100px; width: 100px;left: -150px; border-radius: 50%;">
+		<span>Machine Learning</span>
+		<br><br><span class="para">Machine learning is the science of getting computers to act without being explicitly programmed. In this class, you will learn about the most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself. More importantly, you'll learn about not only the theoretical underpinnings of learning, but also gain the practical know-how needed to quickly and powerfully apply these techniques to new problems.  </span>
+	</div>
+</section>
+
+
+<section id="vd">
+	<div class="video">
+		<iframe width="600px" height="500px" src="https://www.youtube.com/embed/PPLop4L2eGk?autoplay=1" allowfullscreen></iframe>
+	</div>
+</section>
+
+<section id="points">
+	<div class="dot">
+		<ul>
+			<br><br><li>Machine Learning Algorithms</li>
+			<br><br><li>Supervised Learning</li>
+			<br><br><li>Linear Regression</li>
+			<br><br><li>Regularization</li>
+		</ul>
+	</div>
+	<div class="dot2">
+		<ul>
+			<br><br><li>Logistic Regression</li>
+			<br><br><li>Artifical Neural Network</li>
+			<br><br><li>Un-Supervised Learning</li>
+			<br><br><li>Recommender Systems</li>
+		</ul>
+	</div>
+	<div class="dot3">
+		<ul>
+			<br><br><li>Support Vector Machines</li>
+			<br><br><li>Dimensionality reduction</li>
+			<br><br><li>Anomaly Detection</li>
+		</ul>
+	</div>
+	
+</section>
+<section id="References">
+    <div class="re">
+        <span class="ref">References</span>
+        <br><br><span><a class = "link" href="https://www.coursera.org/learn/machine-learning?">Machine Learning By Andrew NG</a></span>
+		<br><a href="https://drive.google.com/uc?export=download&id=1MAt9jvBALJk4W_6qKevCCiCKvTTe0hl0">
+        <i  class="fa fa-file-pdf-o" style="font-size:44px; color:red; padding-left: 180px; padding-top: 20px; padding-bottom: 40px;"></i>
+        <span style="font-size: 23px; color:white; font-family: 'Poppins',sans-serif; left:5px">   ML Yearning.pdf</span></a>
+    </div>
+</section>
+
+<section id="footer">
+	<div class="container">
+		<div class="cp">
+			<footer>Copyright;&copy 2021 FOCUS.co</footer>
+		</div>
+	</div>
+</section>
+
+</body>
+</html>

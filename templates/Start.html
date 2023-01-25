@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Focus</title>
+</head>
+
+
+ <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script type="text/javascript" src="https://kit.fontawesome.com/a076d05399.js"></script>
+<body>
+<!-- Header Section Start-->
+
+<section id="header">
+	 <header id="header1">
+     	<div class="navigation" >
+      		<nav class="navbar">
+        		<div class="content">
+          			<div class="logo">
+          				<a href=""> <img src="{{ url_for('static',    filename='images/1.jpg') }}" height="32px" width="32px" style="position: absolute; top: 30px;left:10px">Focus </a>
+          			</div>
+          <ul class="menu">
+            <li><a  href="">  Home</a></li>
+            <div class="dropdown">
+            	<li><a href="">Explore</a></li>
+            	<div class="dropdown-content">
+            		<a class="sub1" href="{{ url_for('Login')}}">First Year
+            		<div class="sub_menu1">
+            			<span>Python</span>
+            		</div>
+            	</a>
+
+            		<a class="sub2" href="{{ url_for('Login')}}">Second year
+            		<div class="sub_menu2">
+            			<span class="other2">Data Structures</span>
+            		</div>
+            	</a>
+
+            		<a class="sub3" href="{{ url_for('Login')}}">Third year
+            		<div class="sub_menu3">
+            			<span class="other3">Machine Learning</span>
+            		</div>
+            	</a>
+
+            		<a class="sub4" href="{{ url_for('Login')}}">Fourth year
+            		<div class="sub_menu4">
+            			<span class="other4">Deep Learning</span>
+            		</div>
+            	</a>
+
+            	</div>
+
+        	</div>
+        	<li><a href="#contact">   Contact</a></li>
+            <li><a href="{{ url_for('Login')}}" >  Log In  </a></li>
+            <li><a href="{{ url_for('Register')}}" > Register</a></li>
+            
+          </ul>
+          
+        		</div>
+      		</nav>
+      </div>
+    </header>
+</section>
+
+<!-- Header Section End-->
+
+
+
+
+
+
+	
+
+
+
+
+
+<section id="slogans">
+	<div class="images">
+		<div class = "wrapper">
+            <h2> Build Better <span></span></h2>
+            <p>Your customers won’t settle and neither should you. With Focus, technology teams know more and work better together. Develop the skills you need for your top priorities. Improve workflows with actionable data. Build better—every time.
+
+</p>
+            
+        </div>
+	</div>
+
+</section>
+
+
+
+
+
+
+<section id="course">
+	<div class="box-container">
+		<a href="{{ url_for('Login')}}" id="py">
+		<div class="Python-box">
+			
+			<img src="{{ url_for('static',    filename='images/python.jpg') }}" style="position: absolute; height: 120px; width: 120px;left: 280px;">
+			<br><span class="box-title" style="color: #f18b2c;">PATH</span>
+			<br><br><span class="box-course">Python</span>
+			<br><span class="box-year">First Year</span>
+			<br><br><br><span class="box-href">Take a look   <span class="arrow"style="color: #f18b2c; font-size:28px;position: absolute; top:133px;padding-left: 5px;  "> &#8250;</span></span>
+		</div>
+		</a>
+
+
+
+		<a href="{{ url_for('Login')}}" id="ds">
+		<div class="DS-box">
+			<img src="{{ url_for('static',    filename='images/DS.png') }}" style="position: absolute; height: 120px; width: 120px;left: 280px;">
+			<br><span class="box-title" style="color: #f18b2c;">PATH</span>
+			<br><br><span class="box-course">Data Structures</span>
+			<br><span class="box-year">Second Year</span>
+			<br><br><br><span class="box-href">Take a look   <span class="arrow"style="color: #f18b2c; font-size:28px;position: absolute; top:133px;padding-left: 5px;  "> &#8250;</span></span>
+		</div>
+		</a>
+
+
+
+		<a href="{{ url_for('Login')}}" id="ml">
+		<div class="ML-box">
+			<img src="{{ url_for('static',    filename='images/ML.png') }}" style="position: absolute; height: 120px; width: 120px;left: 280px;">
+			<br><span class="box-title" style="color: #f18b2c;">PATH</span>
+			<br><br><span class="box-course">Machine Learning</span>
+			<br><span class="box-year">Third Year</span>
+			<br><br><br><span class="box-href">Take a look   <span class="arrow"style="color: #f18b2c; font-size:28px;position: absolute; top:133px;padding-left: 5px;  "> &#8250;</span></span>
+		</div>
+		</a>
+
+
+		<a href="{{ url_for('Login')}}" id="dl">
+		<div class="DL-box">
+			<img src="{{ url_for('static',    filename='images/DL.png') }}" style="position: absolute; height: 120px; width: 120px;left: 280px;">
+			<br><span class="box-title" style="color: #f18b2c;">PATH</span>
+			<br><br><span class="box-course">Deep Learning</span>
+			<br><span class="box-year">Fourth Year</span>
+			<br><br><br><span class="box-href">Take a look   <span class="arrow"style="color: #f18b2c; font-size:28px;position: absolute; top:133px;padding-left: 5px;  "> &#8250;</span></span>
+		</div>
+		</a>
+
+
+
+		<div class="Desc">
+			<div class="desc_ali">
+			<span class="desc1" style="color: #f18b2c;">TRENDING TECHNOLOGIES</span>
+			<br><br><span class="desc2">Popular topics<br>to learn now...</span>
+			<br><br><br><span class="desc3">Not sure what technologies to focus on? The Technology Index ranks 850+ technologies by their relative popularity. See what’s topping the charts and get recommended courses to skill up. </span>
+			</div>
+		</div>
+
+
+
+	</div>
+</section>
+
+<section id="theory">
+	<div class="box-container2">
+		<div class="t1">
+			<span class="title"> Empower your teams to grow their skills and their careers</span>
+			<span class="disc">Prepare your team for certification exams with our expert authored content and practice exams.</span>
+		</div>
+
+		<div class="t2">
+			<span class="title"> Make lasting workflow improvements with insights </span>
+			<span class="disc">Get visibility into what’s happening within your user stories, tasks and bugs. Flow’s delivery module helps you better understand how your team is working and can make lasting improvements to your workflow.</span>
+		</div>
+
+		<div class="t3">
+			<span class="title">Utilize a space for unrestricted exploration</span>
+			<span class="disc">Sandboxes gives your team a safe environment to practice what they're learning from expert-authored courses.</span>
+		</div>
+		
+	</div>
+	
+</section>
+
+
+<section id="contact">
+	<div class="contact-box">
+		<span> Customer support</span>
+		<p> Email Support</p>
+		<a href="">121810313002@gitam.in </a>
+	</div>
+</section>
+
+
+
+<section id="footer">
+	<div class="container">
+		<div class="cp">
+			<footer>Copyright;&copy 2021 FOCUS.co</footer>
+		</div>
+	</div>
+</section>
+
+
+
+
+</body>
+</html>

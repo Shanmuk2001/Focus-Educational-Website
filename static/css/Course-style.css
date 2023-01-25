@@ -1,0 +1,280 @@
+body{
+  background:#000;
+
+}
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.navigation{
+  
+  overflow: hidden;
+}
+.navbar
+{
+  top:0;
+  left: 0;
+  position:fixed;
+  background:#212121;
+  z-index: 9999;
+  padding-top:26px; 
+  width: 100%;
+  height: 60px;
+}
+.navbar .content
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .menu {
+  display: inline-flex; 
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.menu li{
+  list-style: none;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.menu li a{
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 30px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.menu li a:hover{
+  background:grey;
+  transition: .5s;
+}
+#bg .image{
+  width: 100%;
+  height: 500px;
+  margin-top: 50px; 
+  left: 0px;
+}
+
+#bg .text{
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+}
+#bg .text .para{
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: normal;
+}
+#vd{
+  position: absolute;
+  height: 500px;
+  width:600px;
+  border-radius: 20px;
+  background:#2e2e2e;
+  left:500px;
+  top: 400px;
+}
+#vd .video .iframe{
+  border-radius: 20px;
+  left: 500px;
+  top: 300px;
+}
+#points{
+   position: absolute;
+  height: 400px;
+  width:100%;
+  border-radius: 10px;
+  background:#2e2e2e;
+  opacity: 0.5;
+  top: 900px;
+}
+#points .dot{
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+  margin-left: 10%;
+}
+#points .dot2{
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+  margin-top: -18%;
+  margin-left: 40%;
+}
+#points .dot3{
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+  margin-top: -18%;
+  margin-left: 70%;
+}
+#References{
+  position: absolute;
+ height: 100px;
+ width:100%;
+ border-radius: 10px;
+ background:#000;
+ opacity: 0.9;
+ top: 1350px;
+}
+#References .re .ref{ 
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Poppins',sans-serif;
+  margin-left: 10%;
+}
+#References .re .link{ 
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+  margin-left: 12%;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background:#2e2e2e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  top: 87px;
+
+}
+
+ .sub1:hover .sub_menu1{
+display: block;
+} 
+
+ .sub2:hover .sub_menu2{
+display: block;
+} 
+ .sub3:hover .sub_menu3{
+display: block;
+} 
+ .sub4:hover .sub_menu4{
+display: block;
+} 
+
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.dropdown-content span{
+  color:white;
+  position: absolute;
+  left:70px;
+  top: 90px;
+
+}
+.dropdown-content .other2{
+  color:white;
+  position: absolute;
+  left:30px;
+  top: 90px;
+
+}
+.dropdown-content .other3{
+  color:white;
+  position: absolute;
+  left:20px;
+  top: 90px;
+
+}
+.dropdown-content .other4{
+  color:white;
+  position: absolute;
+  left:35px;
+  top: 90px;
+
+}
+.dropdown-content .sub_menu1 {
+  position: absolute;
+  top:0px;
+  left: 150px;
+  background:#2e2e2e;
+  height: 190px;
+  width: 200px;
+  display:none;
+}
+.dropdown-content .sub_menu2 {
+  position: absolute;
+  top:0px;
+  left: 150px;
+  background: #2e2e2e;
+  height: 190px;
+  width: 200px;
+  display:none;
+}
+.dropdown-content .sub_menu3 {
+  position: absolute;
+  top:0px;
+  left: 150px;
+  background:#2e2e2e;
+  height: 190px;
+  width: 200px;
+  display:none;
+}
+.dropdown-content .sub_menu4 {
+  position: absolute;
+  top:0px;
+  left: 150px;
+  background: #2e2e2e;
+  height: 190px;
+  width: 200px;
+  display:none;
+}
+
+#footer{
+  margin-top: 1000px;
+}
+
+#footer .container{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #2e2e2e;
+}
+
+#footer .container .cp{
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+  top: 5px;
+}
